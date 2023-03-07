@@ -14,27 +14,28 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-# st.write('{"Name":"DeepGohil" \n"age"}')
+# st.write('{"Name":"DeepGohil"  <br>"age"}')
 
 
 
 
 
 
-st.write("""
-{\n\n
-  "Name": "Deep Gohil",\n
-  "Email": "hello@deepgohil.engineer",\n
-  "Phone": "+918104680835",\n
-  "Work_Experience": \n\n{
-    \n\n"company": "Nilee Games",
-    \n\n"position": "Backend Developer",
-    \n\n"start_date": "Feb-2022",
-    \n\n"end_date": "Dec-2022"
-    \n\n"tasks":" Working as backend platform developer for TMKUCtaarak mehta ka ulta chashma) upcoming game which can handle upto 10 lakh user
-\n\nActive contributor in architecture discussions and development of various python micro services on AWS Cloud Infrastructure(E.g payment, KYC,prize distribution)
-\n\nAutomate CI/CD pipelines using AWS CodePipeline Technologies used are node js python, AWS SQS AWS ElastiCache AWS lambda etc"
-  \n\n},
+st.write("""<pre>
+{ 
+  <br>"Name": "Deep Gohil",
+  <br>"Email": "hello@deepgohil.engineer",
+  <br>"Phone": "+918104680835", <br>
+  "Work_Experience":   <br>{
+      <br>&emsp;&emsp;"company": "Nilee Games",
+      <br>&emsp;&emsp;"position": "Backend Developer",
+      <br>&emsp;&emsp;"start_date": "Feb-2022",
+      <br>&emsp;&emsp;"end_date": "Dec-2022"
+      <a href='https://www.streamlit.io/'>link</a>
+      <br>&emsp;&emsp;"tasks":" Working as backend platform developer for TMKUCtaarak mehta ka ulta chashma) upcoming game which can handle upto 10 lakh user
+  <br>Active contributor in architecture discussions and development of various python micro services on AWS Cloud Infrastructure(E.g payment, KYC,prize distribution)
+  <br>Automate CI/CD pipelines using AWS CodePipeline Technologies used are node js python, AWS SQS AWS ElastiCache AWS lambda etc"
+    <br>},
   "skills": [
     "Python",
     "JavaScript",
@@ -70,7 +71,7 @@ st.write("""
   ]
 }
 
-""")
+</pre>""", unsafe_allow_html=True)
 
 
 st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
