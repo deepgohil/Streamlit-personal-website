@@ -1,0 +1,5 @@
+venv create
+python -m venv env
+
+req /.txt
+pip freeze > requirements.txt
